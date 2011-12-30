@@ -1,4 +1,8 @@
-require 'md5'
+begin
+	require 'md5'
+rescue
+	require 'digest/md5'
+end
 
 module Geokit
 
